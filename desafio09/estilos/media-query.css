@@ -1,0 +1,50 @@
+@charset "UTF-8";
+
+/* Todas as demais mídias */
+
+/* Typical Device Breakpoints
+------------------------------
+Pequenas telas até:600px
+Celular: de 600px até 768px
+Tablet: 768px até 992px
+Desktop: 1025px até 1200px
+Grandes telas: acima de 1200px
+ */
+
+ @media screen and (min-width: 768px) and (max-width: 992px) {
+    body {
+        background-image: linear-gradient(to bottom, #fee5e6, #5f2c82);
+    }
+
+    section#login {
+        width: 80vw;
+        height: 360px;
+    }
+ }
+
+
+ @media screen and (min-width: 992px) { /* CONFIGURAÇÕES PARA DESKTOP */
+    body {
+        background-image: linear-gradient(to bottom, #fee5e6, #5f2c82);
+    }
+
+    section#login {
+        width: 950px;
+        height: 350px;
+        flex-direction: row-reverse;
+    }
+
+    section#login > div#imagem {
+      height: auto;
+    } 
+ }
+
+ div#formulario > h1 {
+   font-size: 2em;
+ }
+
+ div#formulario > p {
+   font-size: 1em;
+   margin: 20px 0px;
+}
+    
